@@ -1,0 +1,4 @@
+<annotationInfo>
+<item  id="21" filename="mem_controller.c" linenumber="9" name="icmp_ln9" contextFuncName="mem_controller" moduleName="mem_controller" rtlName="icmp_ln9_fu_80_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="11" fileDirectory="/home/ooc/repos/kfc/hls/bram_test"><\/item>
+<item  id="22" filename="mem_controller.c" linenumber="14" name="sext_ln14" contextFuncName="mem_controller" moduleName="mem_controller" rtlName="sext_ln14_fu_86_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="/home/ooc/repos/kfc/hls/bram_test"><\/item>
+</annotationInfo>

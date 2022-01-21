@@ -1,0 +1,70 @@
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source /opt/Xilinx/Vivado/2019.1/scripts/vivado_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/opt/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'ooc' on host 'hex' (Linux_x86_64 version 5.15.0-2-amd64) on Tue Jan 19 23:18:46 EST 2021
+INFO: [HLS 200-10] On os Debian GNU/Linux bookworm/sid
+INFO: [HLS 200-10] In directory '/home/ooc/repos/kfc/hls/bram_test'
+Sourcing Tcl script 'bram_test/solution1/script.tcl'
+INFO: [HLS 200-10] Opening project '/home/ooc/repos/kfc/hls/bram_test/bram_test'.
+INFO: [HLS 200-10] Adding design file 'mem_controller.c' to the project
+INFO: [HLS 200-10] Opening solution '/home/ooc/repos/kfc/hls/bram_test/bram_test/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'mem_controller.c' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 800.840 ; gain = 128.000 ; free physical = 10971 ; free virtual = 108583
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 800.840 ; gain = 128.000 ; free physical = 10971 ; free virtual = 108583
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 800.840 ; gain = 128.000 ; free physical = 10968 ; free virtual = 108580
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 800.840 ; gain = 128.000 ; free physical = 10968 ; free virtual = 108580
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 800.840 ; gain = 128.000 ; free physical = 10956 ; free virtual = 108567
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 800.840 ; gain = 128.000 ; free physical = 10956 ; free virtual = 108567
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'mem_controller' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'mem_controller' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 7.46 seconds; current allocated memory: 87.095 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0 seconds; current allocated memory: 87.208 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'mem_controller' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'mem_controller/mem' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'mem_controller/addr' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'mem_controller/rw' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'mem_controller/data_in' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'mem_controller/data_out' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'mem_controller' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Bundling port 'addr', 'rw', 'data_in' and 'data_out' to AXI-Lite port AXILiteS.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'mem_controller'.
+INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 87.551 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 800.840 ; gain = 128.000 ; free physical = 10948 ; free virtual = 108560
+INFO: [VHDL 208-304] Generating VHDL RTL for mem_controller.
+INFO: [VLOG 209-307] Generating Verilog RTL for mem_controller.
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 19 23:19:04 2021...
+INFO: [HLS 200-112] Total elapsed time: 17.62 seconds; peak allocated memory: 87.551 MB.
+INFO: [Common 17-206] Exiting vivado_hls at Tue Jan 19 23:19:04 2021...
